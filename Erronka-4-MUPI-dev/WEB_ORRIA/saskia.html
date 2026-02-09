@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <meta name="description" content="IndiUsurbileko Saski orri funtzioanala">
+    <meta name="author" content="MUPI Taldea">
+    <link rel="stylesheet" href="CSS/headeretaFooter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="js/saskiaZerbitzua.js" defer></script>
+    <script src="js/saskia.js" defer></script>
+</head>
+
+<body>
+    <header>
+    <nav class="nabigazioa">
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="IndiUsurbileko Logoa">
+            </a>
+        </div>
+
+        <ul class="menu-zentroa">
+            <li><a href="index.html">Hasiera</a></li> 
+            <li><a href="produktuak.html">Produktuak</a></li>
+            <li><a href="saskia.html">Saskia</a></li>
+            <li><a href="estadistikak.html">Estadistika</a></li>
+        </ul>
+
+        <div class="header-eskuina">
+            <a href="login.html" class="sartu-link">Sartu</a>
+            
+            <a href="register.html" class="izena-eman-btn">Izena eman</a>
+
+            <div class="carritoLogo">
+                <a href="saskia.html">
+                    <img src="IMG/carro.png" alt="Saskia">
+                    <span id="zenbaketa">0</span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+</header>
+    <main>
+        <section id="produktuak">
+        </section>
+        <p id="karritoa_hutsik">Karritoa hutsik dago,<a href="produktuak.html">aukeratu erosi nahi dituzun produktuak</a>
+        </p>
+        <section id="cart-container">
+        </section>
+        <section id="totala">
+            <p>Produktu kantitate totala: <span id="kantitatea">0</span></p>
+            <p>Prezio totala: $<span id="prezioa">0</span></p>
+            <button id="erosiBtn" disabled>Erosi</button>
+            <button id="berrezarri">Berrezarri</button>
+        </section>
+    </main>
+   <footer>
+
+    <div class="footer-edukia">
+
+        <div class="footer-blokea footer-marka">
+            <div class="footer-logo">Indiusurbil</div>
+            <p class="footer-lema">Zure modako marka,</p>
+            <div class="footer-sare-sozialak">
+                <a href="#"><img src="img/instagram.png" alt="Instagram" class="ikonoa"></a>
+                <a href="#"><img src="img/x.webp" alt="x" class="ikonoa"></a>
+                <a href="#"><img src="img/pinterest.webp" alt="Pinterest" class="ikonoa"></a>
+            </div>
+        </div>
+
+        <div class="footer-blokea">
+            <h3 class="bloke-titulua">Nabigazioa</h3>
+            <ul class="footer-lista">
+                <li><a href="#">Orrialde nagusia</a></li>
+                <li><a href="produktuak.html">Produktuak</a></li>
+                <li><a href="saskia.html">Saskia</a></li>
+                <li><a href="#">Estatistikak</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-blokea">
+            <h3 class="bloke-titulua">Bezeroaren arreta</h3>
+            <ul class="footer-lista">
+                <li><a href="#">Kontaktua</a></li>
+            </ul>
+
+           
+        </div>
+
+    </div>
+
+    <div class="footer-azpikoa">
+        <p>© 2026 IndiUsurbil</p>
+        <div class="footer-legalak">
+            <a href="#">Pribatasun politika</a>
+            <a href="#">Terminoak eta kondizioa</a>
+            <a href="#">Abisu legala</a>
+            <a href="#">Cookies</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

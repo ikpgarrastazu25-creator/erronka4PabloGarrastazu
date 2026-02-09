@@ -1,0 +1,258 @@
+/* --- HEADER ESTILO BERRIA --- */
+header {
+    background-color: white; /* Fondo zuria */
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Itzal leuna */
+    position: relative;
+    z-index: 1000;
+}
+
+/* Edukiontzi nagusia (Flexbox) */
+.nabigazioa {
+    display: flex;
+    justify-content: space-between; /* Banaketa: Logoa - Menua - Eskuina */
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 1. Logoa */
+.logo img {
+    height: 120px;
+    width: auto;
+    display: block;
+}
+
+/* 2. Menua (Erdian) */
+.menu-zentroa {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Esteken arteko tartea */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-zentroa li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-zentroa li a:hover {
+    color: #555;
+}
+
+/* 3. Eskuineko aldea */
+.header-eskuina {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+}
+
+/* "Sartu" esteka */
+.sartu-link {
+    text-decoration: none;
+    color: #0d0d2b; 
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* "Izena eman" botoia  */
+.izena-eman-btn {
+    background-color: #0d0d2b; /* Atzealde iluna */
+    color: white; /* Testu zuria */
+    padding: 10px 24px;
+    border-radius: 25px; /* Ertz biribilduak */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.izena-eman-btn:hover {
+    background-color: #2a2a4a;
+}
+
+/* Zure Saskiaren integrazioa */
+.carritoLogo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carritoLogo img {
+    width: 28px;
+    height: auto;
+}
+
+#zenbaketa {
+    /* Zure jatorrizko estiloa */
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: #0d0d2b;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* --- MUGIKORRA (Responsive) --- */
+.menu-ikonoa {
+    display: none; /* Ordenagailuan ezkutatu */
+}
+
+@media (max-width: 900px) {
+    .menu-ikonoa {
+        display: block; /* Mugikorrean erakutsi */
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Menua eta eskuineko partea ezkutatu edo egokitu beharko dira hemen JS-rekin */
+    .menu-zentroa, .header-eskuina {
+        display: none; /* Adibidez, ezkutatu pantaila txikietan */
+    }
+    
+}
+/* --- OINA (FOOTER) OROKORRA --- */
+footer {
+    background-color: #ffffff; /* Atzealde zuria */
+    color: #000000; /* Testu beltza */
+    padding: 60px 40px 20px; /* Barne tartea: goian, alboetan, behean */
+    border-top: 1px solid #f0f0f0; /* Goiko lerro fina bereizteko */
+    font-family: 'Quicksand', sans-serif; /* Zure tipografia */
+}
+
+/* Zutabeen edukiontzi nagusia */
+.footer-edukia {
+    display: flex; /* Flexbox zutabeak lerrokatzeko */
+    justify-content: space-between; /* Zutabeen arteko banaketa */
+    flex-wrap: wrap; /* Pantaila txikietan egokitzeko */
+    max-width: 1200px; /* Gehienezko zabalera */
+    margin: 0 auto; /* Erdian zentratu */
+    gap: 40px; /* Blokeen arteko tartea */
+    margin-bottom: 40px;
+}
+
+/* --- ZUTABEAK (BLOKEAK) --- */
+.footer-blokea {
+    flex: 1; /* Bloke guztiek zabalera bera hartuko dute */
+    min-width: 220px; /* Gutxieneko zabalera mugikorretarako */
+}
+
+/* 1. Markaren estiloa (Logoa) */
+.footer-logo {
+    font-family: serif; /* Irudiko letra tipoa antzeratzeko */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-lema {
+    font-size: 14px;
+    color: #555; /* Gris iluna */
+    margin-bottom: 20px;
+}
+
+/* Sare sozialen ikonoak */
+.footer-sare-sozialak {
+    display: flex;
+    gap: 15px; /* Ikonoen arteko tartea */
+}
+
+.ikonoa {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: transform 0.2s; /* Animazio leuna */
+}
+
+.ikonoa:hover {
+    transform: scale(1.1); /* Sagua gainean jartzean handitu */
+}
+
+/* --- IZENBURUAK ETA ZERRENDAK --- */
+.bloke-titulua {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #000;
+}
+
+.footer-lista {
+    list-style: none; /* Puntutxoak kendu */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-lista li {
+    margin-bottom: 12px; /* Elementuen arteko tartea */
+}
+
+.footer-lista a {
+    text-decoration: none; /* Azpimarra kendu */
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-lista a:hover {
+    color: #555; /* Sagua gainetik pasatzean gris kolorea */
+}
+
+
+
+/* --- BEHEKO ALDEA (Copyright eta Legeak) --- */
+.footer-azpikoa {
+    border-top: 1px solid #eaeaea; /* Bereizteko marra */
+    padding-top: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Bata bestearen azpian */
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-azpikoa p {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-legalak {
+    display: flex;
+    gap: 20px; /* Esteken arteko tartea */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-legalak a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+/* --- RESPONSIVE (MUGIKORRA) --- */
+@media (max-width: 768px) {
+    .footer-edukia {
+        flex-direction: column; /* Zutabeak bertikalki jarri */
+        gap: 30px;
+    }
+    
+    .footer-blokea {
+        text-align: center; /* Testua zentratu mugikorrean */
+    }
+
+    .footer-sare-sozialak, 
+    .footer-legalak {
+        justify-content: center; /* Ikonoak eta estekak zentratu */
+    }
+}
