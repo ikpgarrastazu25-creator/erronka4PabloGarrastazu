@@ -146,24 +146,8 @@ body {
     gap: 10px;
 }
 
-.botoia-aplikatu {
-    background-color: #E72D31;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
-.botoia-garbitu {
-    background-color: white;
-    color: #333;
-    border: 1px solid #ddd;
-    padding: 12px;
-    border-radius: 4px;
-    cursor: pointer;
-}
+
 
 /* --- PRODUKTU SAREA (Eskuina) --- */
 .produktu-eremua {
@@ -230,7 +214,7 @@ body {
 }
 
 .prezioa {
-    color: #E72D31; /* Gorria */
+    color: #000000; /* Gorria */
     font-weight: bold;
     font-size: 16px;
     margin: 0;
@@ -269,7 +253,7 @@ body {
 /* Erosi Botoia */
 .produktu-txartela button {
     width: 100%;
-    background-color: #E72D31;
+    background-color: #dab595;
     color: white;
     border: none;
     padding: 10px;
@@ -280,5 +264,5 @@ body {
 }
 
 .produktu-txartela button:hover {
-    background-color: #c42327;
+    background-color: #d69964;
 }
