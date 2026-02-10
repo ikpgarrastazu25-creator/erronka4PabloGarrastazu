@@ -145,6 +145,54 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+/* Produktu sarrera */
+.kontenedore-flex {
+  display: flex;      
+  gap: 20px;           
+}
+.produktu-sarrera {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FCECDC;
+}
+.zutabea {
+    flex: 1;
+}
+.zutabea img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* "ikusi" botoia  */
+.ikusi-produktuak {
+    background-color: #0d0d2b; /* Atzealde iluna */
+    color: white; /* Testu zuria */
+    padding: 10px 150px;
+    border-radius: 25px; /* Ertz biribilduak */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.ikusi-produktuak:hover {
+    background-color: #2a2a4a;
+    
+}
+.zutabea h1{
+    font-size:50px;
+    font-weight: bold;
+    margin-bottom:40px;
+}
+.zutabea p {
+    font-size: 25px;
+    margin-bottom:40px;
+    margin-top: 40px;
+
+
+}
 
 /* --- PRODUKTU SAREA (Eskuina) --- */
 .produktu-eremua {

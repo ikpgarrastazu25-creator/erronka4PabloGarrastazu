@@ -8,37 +8,32 @@ function getBalorazioRandom() {
 }
 const products = [
   {
-    productName: "Kamiseta txuria",
+    productName: "Kamiseta berdea",
     price: getPrezioRandom(),
     img: "img/kamiseta1.png",
     category: 'kamisetak'
   },
   {
-    productName: "Kamiseta txuria",
+    productName: "Kamiseta grisa",
     price: getPrezioRandom(),
     img: "img/kamiseta2.png",
     category: 'kamisetak'
   },
+  
   {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta3.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
+    productName: "Kamiseta urdina",
     price: getPrezioRandom(),
     img: "img/kamiseta4.png",
     category: 'kamisetak'
   },
   {
-    productName: "Kamiseta txuria",
+    productName: "Kamiseta itasargia",
     price: getPrezioRandom(),
     img: "img/kamiseta5.png",
     category: 'kamisetak'
   },
   {
-    productName: "Kamiseta txuria",
+    productName: "Kamiseta basoak",
     price: getPrezioRandom(),
     img: "img/kamiseta6.png",
     category: 'kamisetak'
@@ -49,306 +44,148 @@ const products = [
     img: "img/kamiseta7.png",
     category: 'kamisetak'
   },
+ 
+
   {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta8.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Galtzak",
+    productName: "Galtza bakero urdinak",
     price: getPrezioRandom(),
     img: "img/galtzak1.png",
     category: 'galtzak'
   },
   {
-    productName: "Galtzak",
-    price: getPrezioRandom(),
-    img: "img/galtzak1.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Galtzak",
+    productName: "Galtza bexak",
     price: getPrezioRandom(),
     img: "img/galtzak2.png",
     category: 'galtzak'
   },
   {
-    productName: "Galtzak",
+    productName: "Galtza berdeak",
     price: getPrezioRandom(),
     img: "img/galtzak3.png",
     category: 'galtzak'
   },
+  
   {
-    productName: "Galtzak",
-    price: getPrezioRandom(),
-    img: "img/galtzak4.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Galtzak",
-    price: getPrezioRandom(),
-    img: "img/galtzak5.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Galtzak",
+    productName: "Galtzak bakero urdin argiak",
     price: getPrezioRandom(),
     img: "img/galtzak6.png",
     category: 'galtzak'
   },
   {
-    productName: "Galtzak",
+    productName: "Galtza marroiak",
     price: getPrezioRandom(),
     img: "img/galtzak7.png",
     category: 'galtzak'
   },
   {
-    productName: "Galtzak",
+    productName: "Galtza marradunak",
     price: getPrezioRandom(),
     img: "img/galtzak8.png",
     category: 'galtzak'
   },
   {
-    productName: "Jertsea",
+    productName: "Jertse berdea",
     price: getPrezioRandom(),
     img: "img/jertsea1.png",
     category: 'jertseak'
   },
   {
-    productName: "Jertsea",
+    productName: "Jertse urdin iluna",
     price: getPrezioRandom(),
     img: "img/jertsea2.png",
     category: 'jertseak'
   },
   {
-    productName: "Jertsea",
+    productName: "Jertse txuria",
     price: getPrezioRandom(),
     img: "img/jertsea3.png",
     category: 'jertseak'
   },
   {
-    productName: "Jertsea",
+    productName: "Jertse granatea",
     price: getPrezioRandom(),
     img: "img/jertsea4.png",
     category: 'jertseak'
   },
   {
-    productName: "Jertsea",
+    productName: "Jertse grixa",
     price: getPrezioRandom(),
     img: "img/jertsea5.png",
     category: 'jertseak'
   },
+
   {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea6.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
+    productName: "Jertse marraduna",
     price: getPrezioRandom(),
     img: "img/jertsea7.png",
     category: 'jertseak'
   },
+ 
   {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea8.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Zapatilak",
+    productName: "Zapatila marra gorria",
     price: getPrezioRandom(),
     img: "img/zapatilak1.png",
     category: 'zapatak'
   },
   {
-    productName: "Zapatilak",
+    productName: "Zapatila txuriak",
     price: getPrezioRandom(),
     img: "img/zapatilak2.png",
     category: 'zapatak'
   },
   {
-    productName: "Zapatilak",
+    productName: "Kiroleko zapatilak",
     price: getPrezioRandom(),
     img: "img/zapatilak3.png",
     category: 'zapatak'
   },
   {
-    productName: "Zapatilak",
+    productName: "Zapatila berdeak",
     price: getPrezioRandom(),
     img: "img/zapatilak4.png",
     category: 'zapatak'
   },
+
   {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak5.png",
-    category: 'zapatak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak6.png",
-    category: 'zapatak'
-  },
-  {
-    productName: "Zapatilak",
+    productName: "Zapatila altuak ",
     price: getPrezioRandom(),
     img: "img/zapatilak7.png",
     category: 'zapatak'
   },
+  
   {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak8.png",
-    category: 'zapatak'
-  },
-  {
-    productName: "Txaketa",
+    productName: "Txaketa berdea",
     price: getPrezioRandom(),
     img: "img/txaketa1.png",
     category: 'txaketak'
   },
   {
-    productName: "Txaketa",
+    productName: "Txaketa bakeroa",
     price: getPrezioRandom(),
     img: "img/txaketa2.png",
     category: 'txaketak'
   },
   {
-    productName: "Txaketa",
+    productName: "Txaketa larruzkoa",
     price: getPrezioRandom(),
     img: "img/txaketa3.png",
     category: 'txaketak'
   },
   {
-    productName: "Txaketa",
+    productName: "Txaketa urdin iluna",
     price: getPrezioRandom(),
     img: "img/txaketa4.png",
     category: 'txaketak'
   },
+ 
   {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa5.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
+    productName: "Plumifero berdea",
     price: getPrezioRandom(),
     img: "img/txaketa6.png",
     category: 'txaketak'
   },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa7.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa8.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta9.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta10.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta11.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta12.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta13.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta14.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta15.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta16.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea9.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea10.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea11.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea12.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea13.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea14.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea15.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertsea",
-    price: getPrezioRandom(),
-    img: "img/jertsea16.png",
-    category: 'jertseak'
-  },
+  
+ 
   {
     productName: "Soinekoa",
     price: getPrezioRandom(),
@@ -385,186 +222,7 @@ const products = [
     img: "img/soineko6.png",
     category: 'soinekoak'
   },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa9.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa10.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa11.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa12.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa13.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa14.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa15.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa",
-    price: getPrezioRandom(),
-    img: "img/txaketa16.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak9.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak10.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak11.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak12.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak13.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak14.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak15.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak16.png",
-    category: 'zapatilak'
-  },
-  {
-    productName: "Kamiseta umea",
-    price: getPrezioRandom(),
-    img: "img/umekamiseta1.png",
-    category: 'umekamiseta'
-  },
-  {
-    productName: "Kamiseta umea",
-    price: getPrezioRandom(),
-    img: "img/umekamiseta2.png",
-    category: 'umekamiseta'
-  },
-  {
-    productName: "Kamiseta umea",
-    price: getPrezioRandom(),
-    img: "img/umekamiseta3.png",
-    category: 'umekamiseta'
-  },
-  {
-    productName: "Kamiseta umea",
-    price: getPrezioRandom(),
-    img: "img/umekamiseta4.png",
-    category: 'umekamiseta'
-  },
-  {
-    productName: "Kamiseta umea",
-    price: getPrezioRandom(),
-    img: "img/umekamiseta5.png",
-    category: 'umekamiseta'
-  },
-  {
-    productName: "Kamiseta umea",
-    price: getPrezioRandom(),
-    img: "img/umekamiseta6.png",
-    category: 'umekamiseta'
-  },
-  {
-    productName: "Ume zapatila",
-    price: getPrezioRandom(),
-    img: "img/umezapatila1.png",
-    category: 'umezapatila'
-  },
-  {
-    productName: "Ume zapatila",
-    price: getPrezioRandom(),
-    img: "img/umezapatila2.png",
-    category: 'umezapatila'
-  },
-  {
-    productName: "Ume zapatila",
-    price: getPrezioRandom(),
-    img: "img/umezapatila3.png",
-    category: 'umezapatila'
-  },
-  {
-    productName: "Ume zapatila",
-    price: getPrezioRandom(),
-    img: "img/umezapatila4.png",
-    category: 'umezapatila'
-  },
-  {
-    productName: "Ume galtza",
-    price: getPrezioRandom(),
-    img: "img/galtzak13.png",
-    category: 'umegaltza'
-  },
-  {
-    productName: "Ume galtza",
-    price: getPrezioRandom(),
-    img: "img/galtzak14.png",
-    category: 'umegaltza'
-  },
-  {
-    productName: "Ume galtza",
-    price: getPrezioRandom(),
-    img: "img/galtzak15.png",
-    category: 'umegaltza'
-  },
-  {
-    productName: "Ume galtza",
-    price: getPrezioRandom(),
-    img: "img/galtzak16.png",
-    category: 'umegaltza'
-  },
+ 
 ];
 /* --- Balorazioa eta ID gehitu --- */
 products.forEach((product, index) => {
