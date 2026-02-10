@@ -19,7 +19,7 @@ const products = [
     img: "img/kamiseta2.png",
     category: 'kamisetak'
   },
-  
+
   {
     productName: "Kamiseta urdina",
     price: getPrezioRandom(),
@@ -44,7 +44,7 @@ const products = [
     img: "img/kamiseta7.png",
     category: 'kamisetak'
   },
- 
+
 
   {
     productName: "Galtza bakero urdinak",
@@ -64,7 +64,7 @@ const products = [
     img: "img/galtzak3.png",
     category: 'galtzak'
   },
-  
+
   {
     productName: "Galtzak bakero urdin argiak",
     price: getPrezioRandom(),
@@ -120,7 +120,7 @@ const products = [
     img: "img/jertsea7.png",
     category: 'jertseak'
   },
- 
+
   {
     productName: "Zapatila marra gorria",
     price: getPrezioRandom(),
@@ -152,7 +152,7 @@ const products = [
     img: "img/zapatilak7.png",
     category: 'zapatak'
   },
-  
+
   {
     productName: "Txaketa berdea",
     price: getPrezioRandom(),
@@ -177,15 +177,15 @@ const products = [
     img: "img/txaketa4.png",
     category: 'txaketak'
   },
- 
+
   {
     productName: "Plumifero berdea",
     price: getPrezioRandom(),
     img: "img/txaketa6.png",
     category: 'txaketak'
   },
-  
- 
+
+
   {
     productName: "Soinekoa",
     price: getPrezioRandom(),
@@ -222,7 +222,7 @@ const products = [
     img: "img/soineko6.png",
     category: 'soinekoak'
   },
- 
+
 ];
 /* --- Balorazioa eta ID gehitu --- */
 products.forEach((product, index) => {

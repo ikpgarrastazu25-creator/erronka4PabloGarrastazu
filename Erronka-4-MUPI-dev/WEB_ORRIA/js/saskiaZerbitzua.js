@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function karritoraGehitu(produktu) {
     let memoria = JSON.parse(localStorage.getItem(keyLocalStorage));
     let azkenKantitatea;
-
     if (!memoria || memoria.length === 0) {
         const produktuBerria = getProduktuBerriaMemoria(produktu);
         localStorage.setItem(keyLocalStorage, JSON.stringify([produktuBerria]));
