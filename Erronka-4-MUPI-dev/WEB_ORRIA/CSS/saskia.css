@@ -93,9 +93,10 @@ main::before {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    position: sticky; 
+   position: sticky; /* scrolleatzeen den bitartean eskubitan mantentzeko */
     top: 20px; 
     height: fit-content; 
+    z-index: 10; /* Beste elementuen gainetik egoteko */ 
 }
 /* "Laburpena" titulua */
 #totala::before {
