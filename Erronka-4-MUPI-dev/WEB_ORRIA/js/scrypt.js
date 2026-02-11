@@ -249,7 +249,7 @@ const displayProducts = (productsToShow) => {
       <h3>${product.productName}</h3>
       <div class="txartel-xehetasunak">
           <div class="prezio-kaxa">
-             <p class="prezioa">$ ${product.price}</p>
+             <p class="prezioa"> ${product.price} €</p>
           </div>
           <div class="balorazioa">
              <span class="izarra">★</span>${product.rating}

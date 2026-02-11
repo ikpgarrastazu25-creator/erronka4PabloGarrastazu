@@ -3,7 +3,7 @@
 
 /*  ESTILO OROKORRAK  */
 body {
-    background-color: #FDF1E6; /* Hondo krema */
+    background-color: #FDF1E6; /* Fondoko koloreak */
     font-family: 'Quicksand', sans-serif;
     color: #333;
     margin: 0;
@@ -171,7 +171,12 @@ main::before {
 .izkutatu {
     display: none !important;
 }
-
+#cart-container {
+    display: none; /* Elementu hau HTMLan badago baina hutsik, 
+    ezkutatu, bestela totalaren tablarekin arazoak ematen ditu
+    eta behian eskubitan lagatzen du totalaren tabla, zeozer egongo bazen
+    bezala detektatzen duelako */
+}
 /*  MUGIKORRA (Pantaila txikiak)  */
 @media (max-width: 768px) {
     main {
