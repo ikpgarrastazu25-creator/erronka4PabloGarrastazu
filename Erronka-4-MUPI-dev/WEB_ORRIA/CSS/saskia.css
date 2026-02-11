@@ -1,0 +1,190 @@
+/* --- LETRA-TIPOAK INPORTATU --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;500;700&display=swap');
+
+/* --- ESTILO OROKORRAK --- */
+body {
+    background-color: #FDF1E6; /* Hondo krema */
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+/* Letra dotorea tituluetarako */
+h1, h2, h3, main::before, #totala::before {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- EGITURA NAGUSIA (GRID SISTEMA) --- */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    /* 1fr para productos (izquierda) y 350px para el resumen (derecha) */
+    grid-template-columns: 1fr 350px; 
+    gap: 30px;
+    align-items: start;
+}
+
+/* "Zure Saskia" titulua (Goian) */
+main::before {
+    content: "Zure Saskia";
+    font-size: 3rem;
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    color: #1d1d1d;
+}
+
+/*  PRODUKTUEN ZERRENDA (EZKERRA)  */
+#produktuak {
+    grid-column: 1; /* Forzar columna 1 */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* Txartelaren diseinua (JS estiloak garbitzeko !important erabiltzen da) */
+.saskia-produktua {
+    background: white;
+    border-radius: 20px;
+    padding: 25px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: none !important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saskia-produktua img {
+    width: 90px !important;
+    height: 110px !important;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.saskia-produktua h3 {
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+}
+
+/* Botoiak (+ eta -) */
+.kendu-btn, .gehitu-btn {
+    background: white;
+    border: 1px solid #ddd;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.kendu-btn:hover, .gehitu-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.saskia-produktua span {
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+/*  LABURPENA / TOTALA (ESKUINA)  */
+#totala {
+    grid-column: 2; /* 2 zutabe */
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: sticky; 
+    top: 20px; 
+    height: fit-content; 
+}
+/* "Laburpena" titulua */
+#totala::before {
+    content: "Laburpena";
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+#totala p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Prezio totala nabarmentzeko */
+#totala p:nth-of-type(2) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+/* Erosi botoia */
+#erosiBtn {
+    background-color: #1F3A56; /* Urdin iluna */
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+#erosiBtn:hover {
+    background-color: #2c4d70;
+}
+
+#erosiBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#berrezarri {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: #777;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* --- BESTELAKOAK --- */
+#karritoa_hutsik {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.izkutatu {
+    display: none !important;
+}
+
+/* --- MUGIKORRA (Pantaila txikiak) --- */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Zutabe bakarra bihurtu */
+    }
+
+    #totala {
+        position: static; /* Finko izateari utzi */
+    }
+
+    .saskia-produktua {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}

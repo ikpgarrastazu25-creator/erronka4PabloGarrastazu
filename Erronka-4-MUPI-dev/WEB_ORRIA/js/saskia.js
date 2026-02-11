@@ -31,7 +31,7 @@ function sortuProduktuak() {
                     <img src="${produktu.img}" alt="${produktu.productName}" style="width: 50px; height: 50px; object-fit: cover;">
                     <div>
                         <h3>${produktu.productName}</h3>
-                        <p>Prezioa: $${produktu.price}</p>
+                        <p>Prezioa: ${produktu.price}€</p>
                     </div>
                 </div>
                 <div style="display: flex; align-items: center; gap: 10px;">
