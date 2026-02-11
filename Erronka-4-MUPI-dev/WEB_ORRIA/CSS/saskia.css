@@ -1,7 +1,7 @@
-/* --- LETRA-TIPOAK INPORTATU --- */
+/*  LETRA-TIPOAK INPORTATU  */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;500;700&display=swap');
 
-/* --- ESTILO OROKORRAK --- */
+/*  ESTILO OROKORRAK  */
 body {
     background-color: #FDF1E6; /* Hondo krema */
     font-family: 'Quicksand', sans-serif;
@@ -14,13 +14,12 @@ h1, h2, h3, main::before, #totala::before {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- EGITURA NAGUSIA (GRID SISTEMA) --- */
+/*  EGITURA NAGUSIA (GRID SISTEMA) */
 main {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
     display: grid;
-    /* 1fr para productos (izquierda) y 350px para el resumen (derecha) */
     grid-template-columns: 1fr 350px; 
     gap: 30px;
     align-items: start;
@@ -159,7 +158,7 @@ main::before {
     cursor: pointer;
 }
 
-/* --- BESTELAKOAK --- */
+/*  BESTELAKOAK  */
 #karritoa_hutsik {
     grid-column: 1 / -1;
     text-align: center;
@@ -172,7 +171,7 @@ main::before {
     display: none !important;
 }
 
-/* --- MUGIKORRA (Pantaila txikiak) --- */
+/*  MUGIKORRA (Pantaila txikiak)  */
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr; /* Zutabe bakarra bihurtu */
