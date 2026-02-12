@@ -1,0 +1,246 @@
+/* --- Aldagaiak eta Oinarrizkoak --- */
+:root {
+    --kolorea-beixa: #FAEADD;
+    --kolorea-urdin-iluna: #0F0F3D;
+    --kolorea-testua: #1a1a1a;
+    --kolorea-testua-argia: #555;
+    --kolorea-zuria: #ffffff;
+    --letra-tipoa: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Zure letra-tipoa erabili hemen */
+}
+
+body {
+    font-family: var(--letra-tipoa);
+    color: var(--kolorea-testua);
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.25rem; }
+p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
+
+/* --- Erabilgarriak --- */
+.edukiontzia {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testua-zentratuta { text-align: center; }
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.atala-goiburua {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+/* --- Botoiak --- */
+.botoia {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.botoia-iluna {
+    background-color: var(--kolorea-urdin-iluna);
+    color: var(--kolorea-zuria);
+}
+.botoia-iluna:hover { opacity: 0.9; }
+
+.botoia-zuria {
+    background-color: var(--kolorea-zuria);
+    color: var(--kolorea-urdin-iluna);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.botoia-zuria:hover { background-color: #f0f0f0; }
+
+
+/* =========================================
+   ATAL ESPEZIFIKOAK
+   ========================================= */
+
+/* --- Hero Atala (Hasierako pantaila) --- */
+.hero-atala {
+    background-color: var(--kolorea-beixa);
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-edukiontzia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-testua {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-irudia-wrapper {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-irudia-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Mugikorrerako egokitzapena */
+@media (max-width: 768px) {
+    .hero-edukiontzia {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-testua, .hero-irudia-wrapper {
+        max-width: 100%;
+    }
+}
+
+
+/* --- Ezaugarriak Atala --- */
+.ezaugarriak-atala {
+    /* Fondoa erdibana: goian beixa, behean zuria */
+    background: linear-gradient(to bottom, var(--kolorea-beixa) 40%, var(--kolorea-zuria) 40%);
+    padding: 80px 0;
+}
+
+.ezaugarri-txartela {
+    background: var(--kolorea-zuria);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.ezaugarri-txartela img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.txartela-gorputza {
+    padding: 2rem;
+}
+
+.txartela-egilea {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: var(--kolorea-testua);
+}
+
+
+/* --- CTA Atala (Deia) --- */
+.cta-atala {
+    padding: 80px 0;
+    background-color: var(--kolorea-zuria);
+}
+
+
+/* --- Iritziak Atala --- */
+.iritziak-atala {
+    padding: 80px 0;
+    background-color: var(--kolorea-zuria);
+}
+
+.iritzi-txartela {
+    border: 1px solid #eee;
+    padding: 2rem;
+    background: var(--kolorea-zuria);
+}
+
+.iritzi-txartela .izarrak {
+    color: var(--kolorea-testua);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.iritzi-txartela blockquote {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    color: var(--kolorea-testua);
+}
+
+.erabiltzaile-profila {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.erabiltzaile-profila img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.erabiltzaile-profila span {
+    font-size: 0.85rem;
+    color: var(--kolorea-testua-argia);
+}
+
+
+/* --- Bidalketa Atala --- */
+.bidalketa-atala {
+    background-color: var(--kolorea-beixa);
+    padding: 80px 0;
+}
+
+.bidalketa-edukiontzia {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.bidalketa-edukia {
+    flex: 1;
+}
+
+.bidalketa-irudia {
+    flex: 1;
+    background-color: #EDF2F7;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bidalketa-irudia img {
+    max-width: 100%;
+    height: auto;
+}
+
+.etiketa-txikia {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Mugikorrerako egokitzapena Bidalketa atalean */
+@media (max-width: 768px) {
+    .bidalketa-edukiontzia {
+        flex-direction: column-reverse; /* Irudia goian, testua behean */
+        text-align: center;
+    }
+}
