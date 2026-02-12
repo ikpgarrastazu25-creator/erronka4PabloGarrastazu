@@ -1,4 +1,4 @@
-/* --- OROKORRA --- */
+/*  OROKORRA  */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: #f4f4f4;
@@ -19,7 +19,7 @@ body {
     padding: 20px;
 }
 
-/* --- IRAGAZKIAK (Filtros) --- */
+/*  IRAGAZKIAK   */
 .iragazki-barra {
     text-align: center;
     margin-bottom: 30px;
@@ -43,7 +43,7 @@ body {
     color: white;
 }
 
-/* --- PRODUKTUEN SAREA (Grid) --- */
+/*  PRODUKTUEN SAREA (Grid)  */
 .produktu-sarea {
     display: grid;
     /* Automatikoki zutabeak sortu (Responsive) */
@@ -51,7 +51,7 @@ body {
     gap: 20px;
 }
 
-/* --- PRODUKTU TXARTELA --- */
+/* PRODUKTU TXARTELA  */
 .produktu-txartela {
     background-color: white;
     border-radius: 8px;
@@ -84,7 +84,7 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
 }
-/* --- OROKORRA --- */
+/*  OROKORRA  */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #f9f9f9;
@@ -92,7 +92,7 @@ body {
     margin: 0;
 }
 
-/* --- EGITURA NAGUSIA (2 zutabe) --- */
+/*  EGITURA NAGUSIA (2 zutabe)  */
 .eduki-nagusia {
     display: flex;
     max-width: 1300px;
@@ -102,7 +102,7 @@ body {
     align-items: flex-start;
 }
 
-/* --- ALBOKO BARRA (Ezkerra) --- */
+/*  ALBOKO BARRA (Ezkerra)  */
 .alboko-barra {
     width: 250px;
     flex-shrink: 0; /* Ez txikitu */
@@ -194,7 +194,7 @@ body {
 
 }
 
-/* --- PRODUKTU SAREA (Eskuina) --- */
+/*  PRODUKTU SAREA (Eskuina)  */
 .produktu-eremua {
     flex-grow: 1;
 }
@@ -211,7 +211,7 @@ body {
     gap: 25px;
 }
 
-/* --- PRODUKTU TXARTELA --- */
+/*  PRODUKTU TXARTELA  */
 .produktu-txartela {
     background: white;
     border: 1px solid #eee;
@@ -310,4 +310,100 @@ body {
 
 .produktu-txartela button:hover {
     background-color: #d69964;
+}
+/* --- DISEINU RESPONSIVE-A (Mugikor eta tabletetarako) --- */
+
+@media (max-width: 768px) {
+    
+    /* 1. GOIBURUA: Nabigazio elementuak bertikalki pilatu */
+    .nabigazioa {
+        flex-direction: column; /* Elementuak bata bestearen gainean */
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .menu-zentroa {
+        flex-direction: row; /* Menua lerroan mantendu */
+        flex-wrap: wrap;     /* Lekurik ez badago, beheko lerrora pasa */
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .header-eskuina {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* 2. SARRERA: Banner-eko testua eta irudia zutabe bakarrean jarri */
+    .kontenedore-flex {
+        flex-direction: column; /* Zutabe formatua */
+        text-align: center;
+    }
+
+    .zutabea h1 {
+        font-size: 32px; /* Letra tamaina txikitu mugikorrean */
+    }
+
+    .ikusi-produktuak {
+        padding: 10px 40px; /* Botoia estutu pantailan sartzeko */
+        width: auto;
+    }
+
+    /* 3. EDUKI NAGUSIA: Alboko barra (kategoriak) gora mugitu */
+    .eduki-nagusia {
+        flex-direction: column; /* Kategoriak produktuen gainean jarri */
+        margin: 20px auto;
+    }
+
+    .alboko-barra {
+        width: 100%;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+
+    /* KATEGORIAK: Zerrenda horizontala bihurtu hatzarekin mugitzeko (scroll) */
+    .iragazki-taldea {
+        flex-direction: row;
+        overflow-x: auto; /* Horizontalki mugitzeko aukera */
+        padding-bottom: 10px;
+        gap: 15px;
+        white-space: nowrap; /* Testua lerro berean mantendu */
+    }
+
+    .iragazki-aukera {
+        flex-shrink: 0; /* Aukerak ez daitezen zapaldu */
+    }
+
+    /* 4. PRODUKTU SAREA: Txartelen tamaina egokitu */
+    .produktu-sarea {
+        /* Gutxienez 160px txartel bakoitzeko, lekuaren arabera 1 edo 2 zutabe */
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .produktu-txartela img {
+        height: 180px; /* Irudiak pixka bat txikitu */
+    }
+
+    /* 5. FOOTER: Testu eta bloke guztiak erdiratu */
+    .footer-edukia {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-sare-sozialak {
+        justify-content: center;
+    }
+}
+
+/* Mugikor oso txikietarako doikuntza (480px baino gutxiago) */
+@media (max-width: 480px) {
+    .produktu-sarea {
+        grid-template-columns: 1fr; /* Zutabe bakarra produktuak hobeto ikusteko */
+    }
 }

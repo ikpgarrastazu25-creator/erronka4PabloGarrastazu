@@ -1,11 +1,11 @@
-/* --- Aldagaiak eta Oinarrizkoak --- */
+/*  Aldagaiak eta Oinarrizkoak  */
 :root {
     --kolorea-beixa: #FAEADD;
     --kolorea-urdin-iluna: #0F0F3D;
     --kolorea-testua: #1a1a1a;
     --kolorea-testua-argia: #555;
     --kolorea-zuria: #ffffff;
-    --letra-tipoa: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Zure letra-tipoa erabili hemen */
+    --letra-tipoa: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -26,7 +26,7 @@ h2 { font-size: 2.5rem; }
 h3 { font-size: 1.25rem; }
 p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
 
-/* --- Erabilgarriak --- */
+/*  Erabilgarriak  */
 .edukiontzia {
     width: 90%;
     max-width: 1200px;
@@ -46,7 +46,7 @@ p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
     margin: 0 auto 4rem auto;
 }
 
-/* --- Botoiak --- */
+/*  Botoiak  */
 .botoia {
     display: inline-block;
     padding: 12px 40px;
@@ -70,9 +70,7 @@ p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
 .botoia-zuria:hover { background-color: #f0f0f0; }
 
 
-/* =========================================
-   ATAL ESPEZIFIKOAK
-   ========================================= */
+
 
 /* --- Hero Atala (Hasierako pantaila) --- */
 .hero-atala {
@@ -118,7 +116,7 @@ p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
 }
 
 
-/* --- Ezaugarriak Atala --- */
+/*  Ezaugarriak Atala  */
 .ezaugarriak-atala {
     /* Fondoa erdibana: goian beixa, behean zuria */
     background: linear-gradient(to bottom, var(--kolorea-beixa) 40%, var(--kolorea-zuria) 40%);
@@ -147,14 +145,14 @@ p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
 }
 
 
-/* --- CTA Atala (Deia) --- */
+/*  CTA Atala (Deia)  */
 .cta-atala {
     padding: 80px 0;
     background-color: var(--kolorea-zuria);
 }
 
 
-/* --- Iritziak Atala --- */
+/*  Iritziak Atala  */
 .iritziak-atala {
     padding: 80px 0;
     background-color: var(--kolorea-zuria);
@@ -198,7 +196,7 @@ p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
 }
 
 
-/* --- Bidalketa Atala --- */
+/*  Bidalketa Atala  */
 .bidalketa-atala {
     background-color: var(--kolorea-beixa);
     padding: 80px 0;
