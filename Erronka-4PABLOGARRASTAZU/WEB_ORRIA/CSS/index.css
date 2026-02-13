@@ -225,15 +225,7 @@ p { margin-bottom: 1.5rem; color: var(--kolorea-testua-argia); }
     height: auto;
 }
 
-.etiketa-txikia {
-    display: inline-block;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #999;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
+
 
 /* Mugikorrerako egokitzapena Bidalketa atalean */
 @media (max-width: 768px) {
