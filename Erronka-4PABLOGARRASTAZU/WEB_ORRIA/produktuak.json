@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "productName": "Kamiseta berdea",
+    "price": "25",
+    "img": "img/kamiseta1.png",
+    "category": "kamisetak",
+    "rating": "4.2"
+  },
+  {
+    "id": 2,
+    "productName": "Kamiseta grisa",
+    "price": "32",
+    "img": "img/kamiseta2.png",
+    "category": "kamisetak",
+    "rating": "3.8"
+  },
+  {
+    "id": 3,
+    "productName": "Kamiseta urdina",
+    "price": "28",
+    "img": "img/kamiseta4.png",
+    "category": "kamisetak",
+    "rating": "4.5"
+  },
+  {
+    "id": 4,
+    "productName": "Kamiseta itasargia",
+    "price": "21",
+    "img": "img/kamiseta5.png",
+    "category": "kamisetak",
+    "rating": "3.9"
+  },
+  {
+    "id": 5,
+    "productName": "Kamiseta basoak",
+    "price": "29",
+    "img": "img/kamiseta6.png",
+    "category": "kamisetak",
+    "rating": "4.2"
+  },
+  {
+    "id": 6,
+    "productName": "Kamiseta txuria",
+    "price": "24",
+    "img": "img/kamiseta7.png",
+    "category": "kamisetak",
+    "rating": "4.0"
+  },
+  {
+    "id": 7,
+    "productName": "Galtza bakero urdinak",
+    "price": "45",
+    "img": "img/galtzak1.png",
+    "category": "galtzak",
+    "rating": "4.7"
+  },
+  {
+    "id": 8,
+    "productName": "Galtza bexak",
+    "price": "42",
+    "img": "img/galtzak2.png",
+    "category": "galtzak",
+    "rating": "3.5"
+  },
+  {
+    "id": 9,
+    "productName": "Galtza berdeak",
+    "price": "48",
+    "img": "img/galtzak3.png",
+    "category": "galtzak",
+    "rating": "4.1"
+  },
+  {
+    "id": 10,
+    "productName": "Galtzak bakero urdin argiak",
+    "price": "55",
+    "img": "img/galtzak6.png",
+    "category": "galtzak",
+    "rating": "4.8"
+  },
+  {
+    "id": 11,
+    "productName": "Galtza marroiak",
+    "price": "50",
+    "img": "img/galtzak7.png",
+    "category": "galtzak",
+    "rating": "4.0"
+  },
+  {
+    "id": 12,
+    "productName": "Galtza marradunak",
+    "price": "47",
+    "img": "img/galtzak8.png",
+    "category": "galtzak",
+    "rating": "4.3"
+  },
+  {
+    "id": 13,
+    "productName": "Jertse berdea",
+    "price": "35",
+    "img": "img/jertsea1.png",
+    "category": "jertseak",
+    "rating": "4.6"
+  },
+  {
+    "id": 14,
+    "productName": "Jertse urdin iluna",
+    "price": "38",
+    "img": "img/jertsea2.png",
+    "category": "jertseak",
+    "rating": "4.2"
+  },
+  {
+    "id": 15,
+    "productName": "Jertse txuria",
+    "price": "33",
+    "img": "img/jertsea3.png",
+    "category": "jertseak",
+    "rating": "4.9"
+  },
+  {
+    "id": 16,
+    "productName": "Jertse granatea",
+    "price": "36",
+    "img": "img/jertsea4.png",
+    "category": "jertseak",
+    "rating": "4.1"
+  },
+  {
+    "id": 17,
+    "productName": "Jertse grixa",
+    "price": "34",
+    "img": "img/jertsea5.png",
+    "category": "jertseak",
+    "rating": "3.7"
+  },
+  {
+    "id": 18,
+    "productName": "Jertse marraduna",
+    "price": "39",
+    "img": "img/jertsea7.png",
+    "category": "jertseak",
+    "rating": "4.4"
+  },
+  {
+    "id": 19,
+    "productName": "Zapatila marra gorria",
+    "price": "60",
+    "img": "img/zapatilak1.png",
+    "category": "zapatak",
+    "rating": "4.8"
+  },
+  {
+    "id": 20,
+    "productName": "Zapatila txuriak",
+    "price": "55",
+    "img": "img/zapatilak2.png",
+    "category": "zapatak",
+    "rating": "4.5"
+  },
+  {
+    "id": 21,
+    "productName": "Kiroleko zapatilak",
+    "price": "75",
+    "img": "img/zapatilak3.png",
+    "category": "zapatak",
+    "rating": "4.9"
+  },
+  {
+    "id": 22,
+    "productName": "Zapatila berdeak",
+    "price": "65",
+    "img": "img/zapatilak4.png",
+    "category": "zapatak",
+    "rating": "4.2"
+  },
+  {
+    "id": 23,
+    "productName": "Zapatila altuak ",
+    "price": "70",
+    "img": "img/zapatilak7.png",
+    "category": "zapatak",
+    "rating": "4.6"
+  },
+  {
+    "id": 24,
+    "productName": "Txaketa berdea",
+    "price": "85",
+    "img": "img/txaketa1.png",
+    "category": "txaketak",
+    "rating": "4.7"
+  },
+  {
+    "id": 25,
+    "productName": "Txaketa bakeroa",
+    "price": "80",
+    "img": "img/txaketa2.png",
+    "category": "txaketak",
+    "rating": "4.5"
+  },
+  {
+    "id": 26,
+    "productName": "Txaketa larruzkoa",
+    "price": "95",
+    "img": "img/txaketa3.png",
+    "category": "txaketak",
+    "rating": "4.9"
+  },
+  {
+    "id": 27,
+    "productName": "Txaketa urdin iluna",
+    "price": "88",
+    "img": "img/txaketa4.png",
+    "category": "txaketak",
+    "rating": "4.3"
+  },
+  {
+    "id": 28,
+    "productName": "Plumifero berdea",
+    "price": "99",
+    "img": "img/txaketa6.png",
+    "category": "txaketak",
+    "rating": "4.8"
+  },
+  {
+    "id": 29,
+    "productName": "Soinekoa",
+    "price": "50",
+    "img": "img/soineko1.png",
+    "category": "soinekoak",
+    "rating": "4.6"
+  },
+  {
+    "id": 30,
+    "productName": "Soinekoa",
+    "price": "55",
+    "img": "img/soineko2.png",
+    "category": "soinekoak",
+    "rating": "4.4"
+  },
+  {
+    "id": 31,
+    "productName": "Soinekoa",
+    "price": "52",
+    "img": "img/soineko3.png",
+    "category": "soinekoak",
+    "rating": "4.7"
+  },
+  {
+    "id": 32,
+    "productName": "Soinekoa",
+    "price": "58",
+    "img": "img/soineko4.png",
+    "category": "soinekoak",
+    "rating": "4.5"
+  },
+  {
+    "id": 33,
+    "productName": "Soinekoa",
+    "price": "60",
+    "img": "img/soineko5.png",
+    "category": "soinekoak",
+    "rating": "4.8"
+  },
+  {
+    "id": 34,
+    "productName": "Soinekoa",
+    "price": "62",
+    "img": "img/soineko6.png",
+    "category": "soinekoak",
+    "rating": "4.9"
+  }
+]

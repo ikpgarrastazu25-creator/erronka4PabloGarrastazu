@@ -1,238 +1,11 @@
-/*prezio random funtzioa*/
-function getPrezioRandom() {
-  return (Math.random() * (100 - 20) + 20).toFixed(0);
-}
-/* BALORAZIO RANDOM FUNTZIOA */
-function getBalorazioRandom() {
-  return (Math.random() * (5 - 1) + 1).toFixed(1);
-}
-const products = [
-  {
-    productName: "Kamiseta berdea",
-    price: getPrezioRandom(),
-    img: "img/kamiseta1.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta grisa",
-    price: getPrezioRandom(),
-    img: "img/kamiseta2.png",
-    category: 'kamisetak'
-  },
+/* --- 1. ALDAGAI GLOBALA --- */
+let products = []; // Hemen gordeko ditugu JSON-etik kargatutako datuak
 
-  {
-    productName: "Kamiseta urdina",
-    price: getPrezioRandom(),
-    img: "img/kamiseta4.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta itasargia",
-    price: getPrezioRandom(),
-    img: "img/kamiseta5.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta basoak",
-    price: getPrezioRandom(),
-    img: "img/kamiseta6.png",
-    category: 'kamisetak'
-  },
-  {
-    productName: "Kamiseta txuria",
-    price: getPrezioRandom(),
-    img: "img/kamiseta7.png",
-    category: 'kamisetak'
-  },
-
-
-  {
-    productName: "Galtza bakero urdinak",
-    price: getPrezioRandom(),
-    img: "img/galtzak1.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Galtza bexak",
-    price: getPrezioRandom(),
-    img: "img/galtzak2.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Galtza berdeak",
-    price: getPrezioRandom(),
-    img: "img/galtzak3.png",
-    category: 'galtzak'
-  },
-
-  {
-    productName: "Galtzak bakero urdin argiak",
-    price: getPrezioRandom(),
-    img: "img/galtzak6.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Galtza marroiak",
-    price: getPrezioRandom(),
-    img: "img/galtzak7.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Galtza marradunak",
-    price: getPrezioRandom(),
-    img: "img/galtzak8.png",
-    category: 'galtzak'
-  },
-  {
-    productName: "Jertse berdea",
-    price: getPrezioRandom(),
-    img: "img/jertsea1.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertse urdin iluna",
-    price: getPrezioRandom(),
-    img: "img/jertsea2.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertse txuria",
-    price: getPrezioRandom(),
-    img: "img/jertsea3.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertse granatea",
-    price: getPrezioRandom(),
-    img: "img/jertsea4.png",
-    category: 'jertseak'
-  },
-  {
-    productName: "Jertse grixa",
-    price: getPrezioRandom(),
-    img: "img/jertsea5.png",
-    category: 'jertseak'
-  },
-
-  {
-    productName: "Jertse marraduna",
-    price: getPrezioRandom(),
-    img: "img/jertsea7.png",
-    category: 'jertseak'
-  },
-
-  {
-    productName: "Zapatila marra gorria",
-    price: getPrezioRandom(),
-    img: "img/zapatilak1.png",
-    category: 'zapatak'
-  },
-  {
-    productName: "Zapatila txuriak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak2.png",
-    category: 'zapatak'
-  },
-  {
-    productName: "Kiroleko zapatilak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak3.png",
-    category: 'zapatak'
-  },
-  {
-    productName: "Zapatila berdeak",
-    price: getPrezioRandom(),
-    img: "img/zapatilak4.png",
-    category: 'zapatak'
-  },
-
-  {
-    productName: "Zapatila altuak ",
-    price: getPrezioRandom(),
-    img: "img/zapatilak7.png",
-    category: 'zapatak'
-  },
-
-  {
-    productName: "Txaketa berdea",
-    price: getPrezioRandom(),
-    img: "img/txaketa1.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa bakeroa",
-    price: getPrezioRandom(),
-    img: "img/txaketa2.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa larruzkoa",
-    price: getPrezioRandom(),
-    img: "img/txaketa3.png",
-    category: 'txaketak'
-  },
-  {
-    productName: "Txaketa urdin iluna",
-    price: getPrezioRandom(),
-    img: "img/txaketa4.png",
-    category: 'txaketak'
-  },
-
-  {
-    productName: "Plumifero berdea",
-    price: getPrezioRandom(),
-    img: "img/txaketa6.png",
-    category: 'txaketak'
-  },
-
-
-  {
-    productName: "Soinekoa",
-    price: getPrezioRandom(),
-    img: "img/soineko1.png",
-    category: 'soinekoak'
-  },
-  {
-    productName: "Soinekoa",
-    price: getPrezioRandom(),
-    img: "img/soineko2.png",
-    category: 'soinekoak'
-  },
-  {
-    productName: "Soinekoa",
-    price: getPrezioRandom(),
-    img: "img/soineko3.png",
-    category: 'soinekoak'
-  },
-  {
-    productName: "Soinekoa",
-    price: getPrezioRandom(),
-    img: "img/soineko4.png",
-    category: 'soinekoak'
-  },
-  {
-    productName: "Soinekoa",
-    price: getPrezioRandom(),
-    img: "img/soineko5.png",
-    category: 'soinekoak'
-  },
-  {
-    productName: "Soinekoa",
-    price: getPrezioRandom(),
-    img: "img/soineko6.png",
-    category: 'soinekoak'
-  },
-
-];
-/* --- Balorazioa eta ID gehitu --- */
-products.forEach((product, index) => {
-  product.id = index + 1;
-  product.rating = getBalorazioRandom();
-});
-
-/* --- FUNTZIO NAGUSIA: Produktuak bistaratu --- */
+/* --- 2. FUNTZIO NAGUSIA: Txartelak marrazten dituena --- */
 const displayProducts = (productsToShow) => {
   const shopContent = document.getElementById("shopContent");
+  if (!shopContent) return; // Erroreak ekiditeko elementua ez badago
+  
   shopContent.innerHTML = ""; // Garbitu aurreko edukia
 
   if (productsToShow.length === 0) {
@@ -266,15 +39,16 @@ const displayProducts = (productsToShow) => {
 
     const erosiBotoia = div.querySelector('.erosi-btn');
     erosiBotoia.addEventListener('click', () => {
-      karritoraGehitu(product);
+      if(typeof karritoraGehitu === 'function') {
+         karritoraGehitu(product);
+      }
       alert("Produktua saskira gehitu da!");
     });
     shopContent.append(div);
   });
 };
 
-
-/* --- DOM ELEMENTUAK  --- */
+/* --- 3. DOM ELEMENTUAK ETA IRAGAZKIAK --- */
 const checkboxak = {
   kamisetak: document.getElementById('kamisetakBtn'),
   galtzak: document.getElementById('galtzakBtn'),
@@ -283,19 +57,17 @@ const checkboxak = {
   jertseak: document.getElementById('jertseakBtn'),
   soinekoak: document.getElementById('soinekoakBtn'),
   zapatilak: document.getElementById('zapatilakBtn'),
-  /* Umeen orrialdekoak (Izen desberdinak erabili ditugu gatazkarik ez egoteko) */
   umeKamisetak: document.getElementById('umekamisetakBtn'),
   umeGaltzak: document.getElementById('umegaltzakBtn'),
   umeZapatilak: document.getElementById('umezapatilakBtn'),
 };
-/* denak botoiak */
-const denakBtn = document.getElementById('denakBtn'); // Helduena
-const denakumeBtn = document.getElementById('denakumeBtn'); // Umeena
-/*  UPDATE PRODUCTS FUNTZIOA (LOGIKA ZUZENDUTA) */
+const denakBtn = document.getElementById('denakBtn'); 
+const denakumeBtn = document.getElementById('denakumeBtn'); 
+
+/* --- 4. UPDATE PRODUCTS FUNTZIOA --- */
 const updateProducts = () => {
   const kategoriaaktibatuak = [];
 
-  /* Egiaztatu banan-banan (NULL diren begiratu gabe kraseatu ez dezan) */
   if (checkboxak.kamisetak && checkboxak.kamisetak.checked) kategoriaaktibatuak.push('kamisetak');
   if (checkboxak.galtzak && checkboxak.galtzak.checked) kategoriaaktibatuak.push('galtzak');
   if (checkboxak.jertseak && checkboxak.jertseak.checked) kategoriaaktibatuak.push('jertseak');
@@ -303,18 +75,12 @@ const updateProducts = () => {
   if (checkboxak.zapatak && checkboxak.zapatak.checked) kategoriaaktibatuak.push('zapatak');
   if (checkboxak.zapatilak && checkboxak.zapatilak.checked) kategoriaaktibatuak.push('zapatilak');
   if (checkboxak.soinekoak && checkboxak.soinekoak.checked) kategoriaaktibatuak.push('soinekoak');
-  /* Umeen kategoriak*/
   if (checkboxak.umeKamisetak && checkboxak.umeKamisetak.checked) kategoriaaktibatuak.push('umekamiseta');
   if (checkboxak.umeGaltzak && checkboxak.umeGaltzak.checked) kategoriaaktibatuak.push('umegaltza');
   if (checkboxak.umeZapatilak && checkboxak.umeZapatilak.checked) kategoriaaktibatuak.push('umezapatila');
-  console.log("Aktibatutako kategoriak:", kategoriaaktibatuak); // Debug egiteko
 
-  /* Iragazteko logika */
   if (kategoriaaktibatuak.length === 0) {
-    // Ezer ez badago aukeratuta, denak erakutsi (edo orriaren arabera logika aldatu)
     displayProducts(products);
-
-    // Botoiak aktibatu bisualki
     if (denakBtn) denakBtn.checked = true;
     if (denakumeBtn) denakumeBtn.checked = true;
   } else {
@@ -322,33 +88,27 @@ const updateProducts = () => {
       kategoriaaktibatuak.includes(product.category)
     );
     displayProducts(productsToShow);
-
-    // Botoiak desaktibatu
     if (denakBtn) denakBtn.checked = false;
     if (denakumeBtn) denakumeBtn.checked = false;
   }
 };
 
-/* --- EVENT LISTENERAK --- */
-// Segurtasunarekin gehitu (elementua existitzen bada bakarrik)
+/* --- 5. EVENT LISTENERAK (Botoiak entzuteko) --- */
 Object.values(checkboxak).forEach(checkbox => {
-  if (checkbox) { // Garrantzitsua: null bada ez saiatu gehitzen
+  if (checkbox) { 
     checkbox.addEventListener('change', updateProducts);
   }
 });
 
-/* --- "DENAK" BOTOIA (HELDUAK) --- */
 if (denakBtn) {
   denakBtn.addEventListener('change', (e) => {
     if (e.target.checked) {
-      // Desmarkatu helduen beste guztiak
       if (checkboxak.kamisetak) checkboxak.kamisetak.checked = false;
       if (checkboxak.galtzak) checkboxak.galtzak.checked = false;
       if (checkboxak.jertseak) checkboxak.jertseak.checked = false;
       if (checkboxak.txaketak) checkboxak.txaketak.checked = false;
       if (checkboxak.zapatilak) checkboxak.zapatilak.checked = false;
       if (checkboxak.soinekoak) checkboxak.soinekoak.checked = false;
-
       displayProducts(products);
     } else {
       updateProducts();
@@ -356,18 +116,12 @@ if (denakBtn) {
   });
 }
 
-/* --- "DENAK" BOTOIA (UMEAK) --- */
 if (denakumeBtn) {
   denakumeBtn.addEventListener('change', (e) => {
     if (e.target.checked) {
-      // Desmarkatu umeen beste guztiak
       if (checkboxak.umeKamisetak) checkboxak.umeKamisetak.checked = false;
       if (checkboxak.umeGaltzak) checkboxak.umeGaltzak.checked = false;
       if (checkboxak.umeZapatilak) checkboxak.umeZapatilak.checked = false;
-
-      // Hemen agian bakarrik umeenak erakutsi nahiko zenituzke, 
-      // baina oraingoz produktu guztiak erakusten ditu.
-      // Hobetzeko: products.filter(...) erabili hemen umeenak bakarrik ateratzeko.
       displayProducts(products);
     } else {
       updateProducts();
@@ -375,31 +129,35 @@ if (denakumeBtn) {
   });
 }
 
-/* --- HASIERAKO KARGA: ORRIALDEAREN ARABERA --- */
-document.addEventListener('DOMContentLoaded', () => {
-
-  // Begiratu ea zein orrialdetan gauden (URLan "umeak.html" jartzen duen)
+/* --- 6. ORRIA ABIARAZTEKO FUNTZIOA --- */
+function abiaraziOrrialdea() {
   if (window.location.pathname.includes("umeak.html")) {
-
     console.log("Umeen orrialdean gaude: Umeen produktuak bakarrik kargatzen...");
-
-    // Iragazi bakarrik umeen kategoriak dituzten produktuak
     const umeenKategoriak = ['umekamiseta', 'umegaltza', 'umezapatila'];
-
     const umeenProduktuak = products.filter(product =>
       umeenKategoriak.includes(product.category)
     );
-
-    // Erakutsi iragazitakoak bakarrik
     displayProducts(umeenProduktuak);
-
-    // Ziurtatu "Denak" botoia markatuta dagoela
     if (denakumeBtn) denakumeBtn.checked = true;
 
   } else {
-    // Beste edozein orrialdetan bagaude (adibidez index.html edo produktuak.html), 
-    // erakutsi produktu GUZTIAK (edo nahi duzun logika).
     console.log("Orrialde orokorra: Produktu guztiak kargatzen...");
     displayProducts(products);
   }
+}
+
+/* --- 7. JSON-A FETCH BIDEZ KARGATU --- */
+function kargatuProduktuak() {
+  fetch('produktuak.json')
+    .then(erantzuna => erantzuna.json())
+    .then(datuak => {
+      products = datuak; 
+      abiaraziOrrialdea(); 
+    })
+    .catch(errorea => console.error("Errorea datuak kargatzean:", errorea));
+}
+
+/* --- 8. HASIERAKO KARGA (Orria kargatzean hasiko dena) --- */
+document.addEventListener('DOMContentLoaded', () => {
+  kargatuProduktuak();
 });
