@@ -1,0 +1,32 @@
+{
+  "irabaziak_guztira": 24500.50,
+  "stock_baxuko_produktuak": [
+    {"izena": "Unisex Sudaderak", "stocka": 3},
+    {"izena": "Kotoizko Kamiseta Gorria", "stocka": 5},
+    {"izena": "Praka Motzak", "stocka": 1}
+  ],
+  "gehien_salduak": [
+    {"izena": "Kamiseta Zuria", "kopurua": 120},
+    {"izena": "Jertse Berdea", "kopurua": 85},
+    {"izena": "Txamarra Urdina", "kopurua": 65}
+  ],
+  "bezero_onenak": [
+    {"izena": "Mikel Landa", "eskaerak": 15},
+    {"izena": "Ane Etxebarria", "eskaerak": 11},
+    {"izena": "Jon Perez", "eskaerak": 8}
+  ],
+  "hileko_irabaziak": [
+    {"urtea": 2024, "hila": "Urtarrila", "irabazia": 4200.00},
+    {"urtea": 2024, "hila": "Otsaila", "irabazia": 3800.50},
+    {"urtea": 2024, "hila": "Martxoa", "irabazia": 5100.00}
+  ],
+  "inoiz_erosi_ez_direnak": [
+    {"izena": "Galtzerdi Horiak"},
+    {"izena": "Txapela Berdea"}
+  ],
+  "produktu_errentagarriak_500": [
+    {"izena": "Jaka Beltza", "irabazia": 1500.00},
+    {"izena": "Zapatila Kirol", "irabazia": 850.50},
+    {"izena": "Soineko Dotorea", "irabazia": 620.00}
+  ]
+}

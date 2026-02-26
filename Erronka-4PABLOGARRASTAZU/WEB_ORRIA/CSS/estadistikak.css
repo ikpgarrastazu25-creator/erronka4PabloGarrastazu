@@ -1,0 +1,110 @@
+body {
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.kontainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.kontainer h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.estatistika-txartela {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #1e3799;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.estatistika-txartela:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.estatistika-txartela h3 {
+    color: #576574;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.kontainer > .estatistika-txartela {
+    text-align: center;
+    border-top: 4px solid #27ae60;
+    margin-bottom: 30px;
+}
+
+.irabazi-totala {
+    font-size: 3.5rem;
+    color: #27ae60;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.grid-kontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.estatistika-txartela ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.estatistika-txartela li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f2f6;
+    color: #2f3640;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.estatistika-txartela li:last-child {
+    border-bottom: none;
+}
+
+.estatistika-txartela li strong {
+    color: #1e3799;
+}
+
+@media (max-width: 600px) {
+    .kontainer {
+        margin: 20px auto;
+    }
+    .kontainer h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .irabazi-totala {
+        font-size: 2.5rem;
+    }
+    .grid-kontainer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .estatistika-txartela {
+        padding: 15px;
+    }
+}
+.logo img {
+    height: 120px;
+    width: auto;
+    display: block;
+}
