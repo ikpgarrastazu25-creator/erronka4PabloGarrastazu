@@ -1,4 +1,4 @@
-const produktuKontainer = document.getElementById('produktuak'); // section id="produktuak"
+const produktuKontainer = document.getElementById('produktuak'); /* section id="produktuak" */
 const kantitateaElement = document.getElementById('kantitatea');
 const prezioaElement = document.getElementById('prezioa');
 const hutsikMezua = document.getElementById('karritoa_hutsik');
@@ -26,12 +26,15 @@ function sortuProduktuak() {
             txartela.style.justifyContent = "space-between";
             txartela.style.alignItems = "center";
 
+            /* Irudiak ';' bidez banatuta daudenez, lehenengoa bakarrik hartuko dugu */
+            const lehenIrudia = produktu.irudiak ? produktu.irudiak.split(';')[0] : 'https://via.placeholder.com/150';
+
             txartela.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 10px;">
-                    <img src="${produktu.img}" alt="${produktu.productName}" style="width: 50px; height: 50px; object-fit: cover;">
+                    <img src="${lehenIrudia}" alt="${produktu.izena}" style="width: 50px; height: 50px; object-fit: cover;">
                     <div>
-                        <h3>${produktu.productName}</h3>
-                        <p>Prezioa: ${produktu.price}€</p>
+                        <h3>${produktu.izena}</h3>
+                        <p>Prezioa: ${produktu.prezioa}€</p>
                     </div>
                 </div>
                 <div style="display: flex; align-items: center; gap: 10px;">
@@ -70,17 +73,27 @@ function sortuProduktuak() {
 }
 
 function eguneratuTotalak(produktuak) {
+    if (!produktuak || produktuak.length === 0) {
+        kantitateaElement.innerText = "0";
+        prezioaElement.innerText = "0.00";
+        return;
+    }
+    
     const kantitatea = produktuak.reduce((acc, curr) => acc + curr.kantitatea, 0);
-    const prezioa = produktuak.reduce((acc, curr) => acc + (curr.price * curr.kantitatea), 0);
+    
+    /* Biderketa ondo egiteko datu-baseko prezioa erabili */
+    const prezioa = produktuak.reduce((acc, curr) => acc + (curr.prezioa * curr.kantitatea), 0);
 
     kantitateaElement.innerText = kantitatea;
     prezioaElement.innerText = prezioa.toFixed(2);
 }
 
-berrezarriBtn.addEventListener('click', () => {
-    karritoaHustu();
-    sortuProduktuak();
-});
+if (berrezarriBtn) {
+    berrezarriBtn.addEventListener('click', () => {
+        karritoaHustu();
+        sortuProduktuak();
+    });
+}
 
 if (erosiBtn) {
     erosiBtn.addEventListener('click', () => {
@@ -90,5 +103,5 @@ if (erosiBtn) {
     });
 }
 
-// Hasieratu
+/* Hasieratu */
 sortuProduktuak();

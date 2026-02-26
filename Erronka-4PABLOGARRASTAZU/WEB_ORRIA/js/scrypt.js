@@ -17,15 +17,18 @@ const displayProducts = (productsToShow) => {
     const div = document.createElement("div");
     div.className = 'produktu-txartela';
 
+    // Datu-basetik irudiak puntu eta komaz (;) banatuta datoz, lehenengoa hartuko dugu
+    const lehenIrudia = product.irudiak ? product.irudiak.split(';')[0] : 'https://via.placeholder.com/150';
+
     div.innerHTML = `
-      <img src="${product.img}" alt="${product.productName}" onerror="this.src='https://via.placeholder.com/150'"> 
-      <h3>${product.productName}</h3>
+      <img src="${lehenIrudia}" alt="${product.izena}" onerror="this.src='https://via.placeholder.com/150'"> 
+      <h3>${product.izena}</h3>
       <div class="txartel-xehetasunak">
           <div class="prezio-kaxa">
-             <p class="prezioa"> ${product.price} €</p>
+             <p class="prezioa"> ${product.prezioa} €</p>
           </div>
           <div class="balorazioa">
-             <span class="izarra">★</span>${product.rating}
+             <span class="izarra">★</span> 4.5
           </div>
       </div>
       <div class="tailak">
@@ -84,8 +87,9 @@ const updateProducts = () => {
     if (denakBtn) denakBtn.checked = true;
     if (denakumeBtn) denakumeBtn.checked = true;
   } else {
+    // JSON berriko 'kategoria' eremua irakurtzen dugu
     const productsToShow = products.filter(product =>
-      kategoriaaktibatuak.includes(product.category)
+      product.kategoria && kategoriaaktibatuak.includes(product.kategoria.toLowerCase())
     );
     displayProducts(productsToShow);
     if (denakBtn) denakBtn.checked = false;
@@ -132,23 +136,21 @@ if (denakumeBtn) {
 /* --- 6. ORRIA ABIARAZTEKO FUNTZIOA --- */
 function abiaraziOrrialdea() {
   if (window.location.pathname.includes("umeak.html")) {
-    console.log("Umeen orrialdean gaude: Umeen produktuak bakarrik kargatzen...");
     const umeenKategoriak = ['umekamiseta', 'umegaltza', 'umezapatila'];
     const umeenProduktuak = products.filter(product =>
-      umeenKategoriak.includes(product.category)
+      product.kategoria && umeenKategoriak.includes(product.kategoria.toLowerCase())
     );
     displayProducts(umeenProduktuak);
     if (denakumeBtn) denakumeBtn.checked = true;
 
   } else {
-    console.log("Orrialde orokorra: Produktu guztiak kargatzen...");
     displayProducts(products);
   }
 }
 
 /* --- 7. JSON-A FETCH BIDEZ KARGATU --- */
 function kargatuProduktuak() {
-  fetch('produktuak.json')
+  fetch('../../produktu_guztiak.json')
     .then(erantzuna => erantzuna.json())
     .then(datuak => {
       products = datuak; 

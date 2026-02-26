@@ -1,11 +1,11 @@
 [
   {
-    "id": 1,
-    "izena": "kamiseta",
-    "deskribapena": "kamiseta urdina",
-    "prezioa": 30.0,
-    "stocka": 10,
+    "id": 2,
+    "izena": "Kamiseta",
+    "deskribapena": "beltza",
+    "prezioa": 55.0,
+    "stocka": 14,
     "kategoria": "Kamisetak",
-    "irudiak": ";https://aitorkirolakoutlet.com/wp-content/uploads/2022/12/kamiseta-zabala-eguzkibegi.png"
+    "irudiak": "https://png.pngtree.com/png-vector/20201127/ourmid/pngtree-black-t-shirt-png-image_2454532.jpg"
   }
 ]

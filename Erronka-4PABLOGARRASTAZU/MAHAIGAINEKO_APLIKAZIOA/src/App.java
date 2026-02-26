@@ -8,10 +8,15 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // Al instanciar, se conecta a la base de datos automáticamente
+        /* Kudeatzailea instanciatzean, automatikoki datu-basearekin konexioa 
+           ezartzen da Konexioa klasearen bidez.
+        */
         ProduktuKudeatzailea kudeatzailea = new ProduktuKudeatzailea();
         int aukera;
 
+        /* Erabiltzaileari menua erakusten dion begizta, 
+           7. aukera (Irten) sakatu arte errepikatuko da.
+        */
         do {
             System.out.println("\n=== ONLINE DENDA - BACK-END KUDEAKETA ===");
             System.out.println("1. Produktua gehitu");
@@ -27,7 +32,11 @@ public class App {
             scanner.nextLine(); 
 
             switch (aukera) {
-                case 1: // GEHITU
+                case 1: 
+                    /* PRODUKTUA GEHITU: 
+                       Erabiltzaileari produktu berri baten datuak eskatzen dizkio banan-banan,
+                       Produktua objektu bat sortzen du eta datu-basean gordetzen du.
+                    */
                     System.out.print("Izena: ");
                     String izena = scanner.nextLine();
                     System.out.print("Deskribapena: ");
@@ -47,13 +56,17 @@ public class App {
                     System.out.println("✅ Produktua ondo gehitu da datu-basean, eta JSON fitxategiak eguneratu dira!");
                     break;
 
-                case 2: // CSV KARGATU
+                case 2: 
+                    /* CSV KARGATU: 
+                       CSV fitxategi baten ibilbidea eskatzen du, bertako lerroak irakurri,
+                       komaz (,) banatu eta produktuak masiboki datu-basean kargatzen ditu.
+                    */
                     System.out.print("Sartu fitxategiaren ibilbidea (adib: MAHAIGAINEKO_APLIKAZIOA/dataset_online_arropa_denda_salmentak_erronka4.csv): ");
                     String fitxategia = scanner.nextLine();
                     List<Produktua> produktuKatalogoa = new ArrayList<>();
                     
                     try (BufferedReader br = new BufferedReader(new FileReader(fitxategia))) {
-                        br.readLine(); // Goiburua saltatu
+                        br.readLine(); /* Lehenengo lerroa (goiburua) saltatzen du */
                         String lerroa;
                         while ((lerroa = br.readLine()) != null) {
                             String[] datuak = lerroa.split(",");
@@ -61,11 +74,17 @@ public class App {
                         }
                         kudeatzailea.kargatuCSV(produktuKatalogoa);
                     } catch (Exception e) {
-                        System.out.println("❌ Errorea CSV fitxategia irakurtzean. Egiaztatu ibilbidea ondo dagoela.");
+                        System.out.println("❌ Errorea CSV fitxategia irakurtzean.");
+                        /* e.printStackTrace() gehitu dugu errore zehatza kontsolan ikusteko */
+                        e.printStackTrace(); 
                     }
                     break;
 
-                case 3: // EGUNERATU
+                case 3: 
+                    /* EGUNERATU: 
+                       Datu-basean dagoen produktu baten ID-a eskatzen du, 
+                       eta ondoren eremu guztiak berriro eskatzen ditu hura gainidazteko.
+                    */
                     System.out.print("Sartu eguneratu nahi den produktuaren ID-a datu-basean: ");
                     int idEguneratu = scanner.nextInt();
                     scanner.nextLine();
@@ -89,14 +108,21 @@ public class App {
                     System.out.println("✅ Produktua eguneratu da!");
                     break;
 
-                case 4: // EZABATU
+                case 4: 
+                    /* EZABATU: 
+                       Sartutako ID-a duen produktua datu-basetik ezabatzen du.
+                    */
                     System.out.print("Sartu ezabatu nahi den produktuaren ID-a: ");
                     int idEzabatu = scanner.nextInt();
                     kudeatzailea.ezabatuProduktua(idEzabatu);
                     System.out.println("✅ Produktua ezabatu da eta JSON-ak eguneratu dira!");
                     break;
 
-                case 5: // ZERRENDATU
+                case 5: 
+                    /* ZERRENDATU: 
+                       Produktuak datu-basetik ateratzen ditu eta pantailaratzen ditu. 
+                       Erabiltzaileari prezioaren edo stockaren arabera ordenatzeko aukera ematen dio.
+                    */
                     System.out.print("Nola ordenatu nahi dituzu? (idatzi 'prezioa', 'stock' edo sakatu Enter ez ordenatzeko): ");
                     String ord = scanner.nextLine();
                     if (ord.isBlank()) ord = null;
@@ -104,14 +130,19 @@ public class App {
                     kudeatzailea.zerrendatuProduktuak(null, ord);
                     break;
 
-                case 6: // BILATU
+                case 6: 
+                    /* BILATU: 
+                       Sartutako testua produktuaren izenean edo deskribapenean
+                       ba ote dagoen bilatzen du datu-basean.
+                    */
                     System.out.print("Sartu bilatzeko hitza (izena edo deskribapena): ");
                     String testua = scanner.nextLine();
                     System.out.println("\n--- BILAKETAREN EMAITZA ---");
                     kudeatzailea.bilatuProduktua(testua);
                     break;
 
-                case 7: // IRTEN
+                case 7: 
+                    /* IRTEN: Programa modu egokian amaitzen du */
                     System.out.println("Programa amaitzen... Agur!");
                     break;
 
