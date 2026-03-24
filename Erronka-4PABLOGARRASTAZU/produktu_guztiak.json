@@ -7,5 +7,14 @@
     "stocka": 14,
     "kategoria": "Kamisetak",
     "irudiak": "https://png.pngtree.com/png-vector/20201127/ourmid/pngtree-black-t-shirt-png-image_2454532.jpg"
+  },
+  {
+    "id": 3,
+    "izena": "Soinekoa",
+    "deskribapena": "Gorria",
+    "prezioa": 50.0,
+    "stocka": 1,
+    "kategoria": "Soinekoak",
+    "irudiak": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlqr2VLb1VLLXRTOtjQU2a73U7N24aUARODQ&s"
   }
 ]
